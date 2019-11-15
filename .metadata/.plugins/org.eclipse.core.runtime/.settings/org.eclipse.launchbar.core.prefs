@@ -1,0 +1,6 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:DMA,org.eclipse.launchbar.core.descriptorType.default\:Flash,org.eclipse.launchbar.core.descriptorType.default\:FreeRTOSDemo,org.eclipse.launchbar.core.descriptorType.default\:GPIO,org.eclipse.launchbar.core.descriptorType.default\:I2C,org.eclipse.launchbar.core.descriptorType.default\:I2S,org.eclipse.launchbar.core.descriptorType.default\:ICC,org.eclipse.launchbar.core.descriptorType.default\:LP,org.eclipse.launchbar.core.descriptorType.default\:RTC,org.eclipse.launchbar.core.descriptorType.default\:SPI,org.eclipse.launchbar.core.descriptorType.default\:SPI_Slave,org.eclipse.launchbar.core.descriptorType.default\:SysTick,org.eclipse.launchbar.core.descriptorType.default\:TMR,org.eclipse.launchbar.core.descriptorType.default\:UART,org.eclipse.launchbar.core.descriptorType.default\:Watchdog,org.eclipse.launchbar.core.descriptorType.default\:Hello_World
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:DMA/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:DMA/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
