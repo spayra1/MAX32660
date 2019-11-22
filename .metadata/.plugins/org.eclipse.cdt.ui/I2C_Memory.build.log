@@ -1,0 +1,5 @@
+13:16:38 **** Clean-only build of configuration Debug for project I2C_Memory ****
+make ECLIPSE=1 clean 
+
+13:16:39 Build Finished (took 1s.785ms)
+
