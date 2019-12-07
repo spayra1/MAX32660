@@ -1,5 +1,8 @@
-13:16:38 **** Clean-only build of configuration Debug for project I2C_Memory ****
-make ECLIPSE=1 clean 
+19:07:00 **** Incremental Build of configuration Debug for project I2C_Memory ****
+make ECLIPSE=1 all 
+make -C /C/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver lib BUILD_DIR=/c/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver
+make[1]: Entering directory `/C/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver'
+make[1]: Leaving directory `/C/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver'
 
-13:16:39 Build Finished (took 1s.785ms)
+19:07:09 Build Finished (took 8s.656ms)
 

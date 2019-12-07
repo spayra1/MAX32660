@@ -57,9 +57,7 @@
 
 #define I2C_SLAVE	    MXC_I2C1
 #define I2C_SLAVE_IDX	1
-// was 0x51<<1
-// LC128 memory at 0x50
-#define I2C_SLAVE_ADDR	(0x50<<1)
+#define I2C_SLAVE_ADDR	(0x51<<1)
 #define I2C_TIMEOUT       MXC_DELAY_MSEC(1)
 
 
