@@ -89,13 +89,13 @@ uint8_t writeread(uint8_t memory_address, uint8_t data, int size) {
 	reg = memory_address;
 
 	printf("Master writes data to Slave.\n");
-	if((rc = I2C_MasterWrite(MXC_I2C0, I2C_MEM_ADDR, reg, sizeof(reg), 1)) != E_NO_ERROR) { // with restart
+	if((rc = I2C_MasterWrite(MXC_I2C0, I2C_MEM_ADDR, reg, sizeof(reg), 1)) != 247) { // with restart
 		printf("Error writing %d\n", rc);
 		while(1);
 	}
 
 	printf("Master reads data from Slave.\n");
-	if((rc = I2C_MasterRead(MXC_I2C0, memory_address, data, size, 0)) != E_NO_ERROR) { // with a stop
+	if((rc = I2C_MasterRead(MXC_I2C0, memory_address, data, size, 0)) != 247) { // with a stop
 		printf("Error reading %d\n", rc);
 		while(1);
 	}
@@ -122,11 +122,11 @@ int main(void)
     }
     NVIC_EnableIRQ(I2C0_IRQn);
 
-    int memregister = 0x01;
+    uint8_t memregister = 0x01;
     int size = sizeof(memregister);
-    printf("%d", size);
+    printf("%f \n", size);
     printf("Master I2C reads data to Memory.\n");
-    int somesize = 4;
+    int somesize = 1;
     uint8_t memread = writeread(memregister, txdata, somesize);
     printf(memread);
 
