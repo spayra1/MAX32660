@@ -40,6 +40,8 @@
  * @details 	This example uses the I2C Master to read/write from/to the I2C Slave. For
  * 		        this example you must connect P0.3 to P0.9 (SDA) and P0.2 to P0.8 (SCL). The Master
  * 		        will use P0.8 and P0.9. The Slave will use P0.2 and P0.3.  
+ *
+ * 		        Working - tested by Gabriel 12/21/19
  *              
  */
 

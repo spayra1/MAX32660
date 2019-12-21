@@ -1,3 +1,5 @@
 .metadata/
-**/metadata/**
-/metadata/
+**/.metadata/**
+/.metadata/
+/.metadata/**
+.metadata/.plugins/org.eclipse.cdt.core/I2C_Scanner.1574446778118.pdom
