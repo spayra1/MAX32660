@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;I2C/Year&apos;" deleteContents="false" description="Delete resource &apos;I2C/Year&apos;" element1="/I2C/Year" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1573803251948"/>&#x0A;<refactoring comment="Delete resource &apos;I2C/UROP&apos;" deleteContents="false" description="Delete resource &apos;I2C/UROP&apos;" element1="/I2C/UROP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1573803256155"/>
-</session>
