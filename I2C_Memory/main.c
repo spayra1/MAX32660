@@ -127,7 +127,7 @@ int main(void)
     printf("%d", size);
     printf("Master I2C reads data to Memory.\n");
     int somesize = 4;
-    uint8_t memread = writeread(memregister, txdata, somesize);
-    printf(memread);
+    int memread = writeread(memregister, txdata, somesize);
+    printf("%d", memread);
 
 }
