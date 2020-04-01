@@ -59,4 +59,15 @@ c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o: \
  c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/dma.h \
  c:/Maxim/Firmware/MAX32660/Libraries/CMSIS/Device/Maxim/MAX32660/Include/dma_regs.h \
  c:/Maxim/Firmware/MAX32660/Libraries/CMSIS/Device/Maxim/MAX32660/Include/wdt_regs.h \
- c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/mxc_delay.h
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/mxc_delay.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/mxc_sys.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/nvic_table.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/tmr.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/tmr_utils.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/gpio.h \
+ c:\maxim\firmware\max32660\libraries\boards\include\led.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/MAX32660PeriphDriver/Include/mxc_assert.h \
+ c:/Maxim/Firmware/MAX32660/Libraries/Boards/EvKit_V1/Include/board.h \
+ i2c_bus.h c:\maxim\toolchain\arm-none-eabi\include\stdlib.h \
+ c:\maxim\toolchain\arm-none-eabi\include\machine\stdlib.h \
+ c:\maxim\toolchain\arm-none-eabi\include\alloca.h

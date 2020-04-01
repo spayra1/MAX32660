@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2016 Maxim Integrated Products, Inc., All Rights Reserved.
+ * some source code Copyright (C) 2016 Maxim Integrated Products, Inc., All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -36,10 +36,8 @@
 
 /**
  * @file    	main.c
- * @brief   	I2C (Loopback) Example 
- * @details 	This example uses the I2C Master to read/write from/to the I2C Slave. For
- * 		        this example you must connect P0.3 to P0.9 (SDA) and P0.2 to P0.8 (SCL). The Master
- * 		        will use P0.8 and P0.9. The Slave will use P0.2 and P0.3.  
+ * @brief   	I2C Temperature Script
+ * @details 	This example uses the I2C Master to read/write from/to the LM75A temperature sensor
  *              
  */
 
@@ -64,7 +62,7 @@
 #define I2C_MASTER	    MXC_I2C0
 #define I2C_MASTER_IDX	0
 #define I2C_SLAVE_ADDR	(0x48<<1)
-#define I2C_TIMEOUT       MXC_DELAY_MSEC(1)
+#define I2C_TIMEOUT     MXC_DELAY_MSEC(1)
 
 
 /***** Globals *****/
@@ -133,45 +131,6 @@ void i2c_callback(i2c_req_t *req, int error)
     i2c_flag = error;
     return;
 }
-
-/*
-//Prints out human-friendly format to read txdata and rxdata
-void print_data(void)
-{
-    int i;
-    printf("txdata: ");
-    for(i = 0; i < 16; ++i) {
-        printf("%d\t", txdata[i]);
-    }
-
-    printf("\nrxdata: ");
-    for(i = 0; i < 16; ++i) {
-        printf("%d\t", rxdata[i]);
-    }
-
-    printf("\n");
-
-    return;
-}
-
-//Compare txdata and rxdata to see if they are the same
-void verify(void)
-{
-    int i, fails = 0;
-    for(i = 0; i < 16; ++i) {
-        if(txdata[i] != rxdata[i]) {
-            ++fails;
-	    }
-    }
-    if(fails > 0) {
-        printf("Fail.\n");
-    } else {
-        printf("Pass.\n");
-    }
-
-    return;
-}
-*/
 
 // *****************************************************************************
 //-- main(): init I2C communication and report temperature every designated seconds.
