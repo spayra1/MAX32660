@@ -64,6 +64,8 @@
 #define I2C_MASTER_IDX	0
 #define I2C_MEM_ADDR	(0x50 << 1)
 #define I2C_TIMEOUT     MXC_DELAY_MSEC(1)
+#define PAGE_LIMIT		16
+
 
 
 /***** Globals *****/
@@ -73,6 +75,13 @@ i2c_cfg_t i2c_cfg;
 #define BUFLENGTH 1 // this may need to be changed? not sure of the value
 uint8_t rxbuf[BUFLENGTH];
 uint8_t txbuf[BUFLENGTH];
+
+uint8_t         sourceData[] = {0x1A, 0x2A, 0x4A, 0x8A,0x1A, 0x2A, 0x4A, 0x8A,0x1A, 0x2A, 0x4A, 0x8A,0x1A, 0x2A, 0x4A, 0x8A};
+uint8_t         addressBuffer[] = {0xAB,0x10} ; //Put your address here
+uint8_t         readBuffer[16];
+uint8_t readByte;
+
+int r = 0;
 
 volatile int i2c_flag;
 
@@ -92,25 +101,106 @@ void i2c_callback(i2c_req_t *i2c_req, int error)
     return;
 }
 
-uint8_t writeread(uint8_t memory_address, uint8_t data, int size) {
+uint8_t timeOut = 0;
+
+int I2C_ByteWrite(uint8_t *dataAddress, uint8_t dataByte, uint8_t addlen)
+{
 	uint8_t rc;
 	uint8_t reg;
-	reg = memory_address;
+   uint8_t writeBuffer[PAGE_LIMIT+3];
+   uint8_t buflen;
 
-	printf("Master writes data to Slave.\n");
-	if((rc = I2C_MasterWrite(MXC_I2C0, I2C_MEM_ADDR, reg, sizeof(reg), 1)) != E_NO_ERROR) { // with restart
-		printf("Error writing %d\n", rc);
-		while(1);
-	}
+   //Copy address bytes to the write buffer so it can be sent first
+    for(int i = 0; i < addlen; i++)
+    {
+        writeBuffer[i] = dataAddress[i];
+    }
 
-	printf("Master reads data from Slave.\n");
-	if((rc = I2C_MasterRead(MXC_I2C0, memory_address, data, size, 0)) != E_NO_ERROR) { // with a stop
-		printf("Error reading %d\n", rc);
-		while(1);
-	}
+   //Check if this is an address write or a data write.
+   if(dataByte != NULL)
+   {
+       writeBuffer[addlen] = dataByte;
+       buflen = addlen+1;
+   }
+   else
+       buflen = addlen;
+
+   printf("Master writes data to Slave.\n");
+   	if((rc = I2C_MasterWrite(I2C_MASTER, I2C_MEM_ADDR, writeBuffer, buflen, 0)) != E_NO_ERROR) { // with restart
+   		printf("Error writing %d\n", rc);
+   		return 1;
+   	}
+}
+
+uint8_t I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
+{
+	uint8_t rc;
+	uint8_t reg;
+    int check;
+
+    //Write the address to the slave
+    check = I2C_ByteWrite(dataAddress,NULL,addlen);
+
+    //If not successful, return to function
+    if(check == 1)
+        return 1; // check for this in error
 
 
-  return (rc);
+    printf("Master reads data from Slave.\n");
+    	if((rc = I2C_MasterRead(I2C_MASTER, I2C_MEM_ADDR, dataAddress, addlen, 0)) != E_NO_ERROR) { // with restart
+    		printf("Error writing %d\n", rc);
+    	}
+}
+
+int I2C_BufferWrite(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen, uint8_t buflen)
+{
+	uint8_t rc;
+	uint8_t reg;
+    uint8_t writeBuffer[PAGE_LIMIT+3];
+
+    //Set Address as the bytes to be written first
+    for(int i = 0; i < addlen; i++)
+    {
+        writeBuffer[i] = dataAddress[i];
+    }
+
+    //Ensure that the page limit is not breached so as to avoid overwriting other data
+    if(buflen > PAGE_LIMIT)
+        buflen = PAGE_LIMIT;
+
+    //Copy data bytes to write buffer
+    for(int j = 0; j < buflen; j++)
+    {
+        writeBuffer[addlen+j] = dataBuffer[j];
+    }
+    //Set up for ACK polling
+    timeOut = 0;
+
+    printf("Master writes data to Slave.\n");
+    	if((rc = I2C_MasterWrite(I2C_MASTER, I2C_MEM_ADDR, writeBuffer, buflen+addlen, 0)) != E_NO_ERROR) { // with restart
+    		printf("Error writing %d\n", rc);
+    		return 1;
+    	}
+}
+void I2C_BufferRead(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen,uint8_t buflen)
+{
+	uint8_t rc;
+    int check = 0;
+
+    //Write Address from where to read
+    check = I2C_ByteWrite(dataAddress,NULL,addlen);
+
+    //check if address write is successful
+    if(check == 1)
+        return; // see if this works
+
+    //Set up for ACK polling
+    timeOut = 0;
+
+    printf("Master reads data from Slave.\n");
+    	if((rc = I2C_MasterRead(I2C_MASTER, I2C_MEM_ADDR, dataBuffer, buflen, 0)) != E_NO_ERROR) { // with restart
+    		printf("Error writing %d\n", rc);
+    	}
 }
 
 // *****************************************************************************
@@ -133,40 +223,22 @@ int main(void)
     i2c_req.restart 	= 0;
     i2c_req.callback 	= i2c_callback;	//-- registering i2c_callback function
 
-	//-- initialize i2c bus transaction ----------------------------------
-	if((error=i2c_init(&i2c_cfg))!=E_NO_ERROR) {
-		printf("[%d] i2c bus initialization error : %d\n", __LINE__, error);
-	}
-
-	//-- set lm75a configuration
-	lm75a_cfg.cfgchar=0x10;
-
-	//-- lm75a id string (0xA1) ------------------------------------------
-	get_id(); 				//-- get board id ----------------
-	/*
-	lm75a_cfg.cfgchar = get_config();	//-- get current configuration ---
-	printf("lm75a_cfg.cfgchar : 0x%02x\n", lm75a_cfg.cfgchar);
-	*/
+    NVIC_EnableIRQ(I2C0_IRQn);
 
 
     printf("\n***** I2C Memory Example *****\n");
     printf("This example uses the I2C Master to read/write from the 24LC128 Memory chip.\n");
 
+    //Writes a byte of data to address specified
+    r = I2C_ByteWrite(&addressBuffer,0x5B,sizeof(addressBuffer));
 
-    //Setup the I2CM
-    I2C_Shutdown(I2C_MASTER);
-    if((error = I2C_Init(I2C_MASTER, I2C_STD_MODE, &sys_i2c_cfg)) != E_NO_ERROR) {
-        printf("Error initializing I2C%d.  (Error code = %d)\n", I2C_MASTER_IDX, error);
-        return 1;
-    }
-    NVIC_EnableIRQ(I2C0_IRQn);
+    //Reads a byte of data stored at the address specified
+    printf(I2C_ByteRead(&addressBuffer,&readByte,sizeof(addressBuffer)));
 
-    int memregister = 0x01;
-    int size = sizeof(memregister);
-    printf("%d", size);
-    printf("Master I2C reads data to Memory.\n");
-    int somesize = 4;
-    int memread = writeread(memregister, txbuf, somesize);
-    printf("%d", memread);
+    //Write a specified number of data bytes beginning at the specified address
+    r = I2C_BufferWrite(&addressBuffer,&sourceData,sizeof(addressBuffer),4);
+
+    //Reads a specified number of data bytes beginning at the specified address
+    I2C_BufferRead(&addressBuffer,&readBuffer,sizeof(addressBuffer),4);
 
 }
