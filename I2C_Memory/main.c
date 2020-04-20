@@ -64,7 +64,7 @@
 #define I2C_MASTER_IDX	0
 #define I2C_MEM_ADDR	(0x50 << 1)
 #define I2C_TIMEOUT     MXC_DELAY_MSEC(1)
-#define PAGE_LIMIT		16
+#define PAGE_LIMIT		64
 
 
 
@@ -163,7 +163,6 @@ int I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
     }
 }
 
-// BufferWrite and BufferRead not ironed out yet
 int I2C_BufferWrite(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen, uint8_t buflen)
 {
 	uint8_t rc;
