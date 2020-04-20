@@ -36,11 +36,11 @@
 
 /**
  * @file    	main.c
- * @brief   	I2C (Loopback) Example 
- * @details 	This example uses the I2C Master to read/write from/to the I2C Slave. For
- * 		        this example you must connect P0.3 to P0.9 (SDA) and P0.2 to P0.8 (SCL). The Master
- * 		        will use P0.8 and P0.9. The Slave will use P0.2 and P0.3.  
- *              
+ * @brief   	I2C Memory Script
+ * @author		Syamantak Payra
+ * @date		April 19, 2020
+ * @details 	This script uses the I2C Master on the MAX32660 to read/write from/to the 24LC128 EEPROM.
+ * 				Warning: page limits not tested
  */
 
 /***** Includes *****/
@@ -105,7 +105,6 @@ uint8_t timeOut = 0;
 int I2C_ByteWrite(uint8_t *dataAddress, uint8_t dataByte, uint8_t addlen)
 {
 	uint8_t rc;
-	uint8_t reg;
 	uint8_t writeBuffer[PAGE_LIMIT+3];
 	uint8_t buflen;
 
@@ -132,13 +131,13 @@ int I2C_ByteWrite(uint8_t *dataAddress, uint8_t dataByte, uint8_t addlen)
    		return 1;
    	} else {
    		printf("\tSuccessfully wrote %d bytes (%d bytes address and %d bytes data)\n", buflen, addlen, (buflen-addlen));
+   		return 0;
    	}
 }
 
-uint8_t I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
+int I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
 {
 	uint8_t rc;
-	uint8_t reg;
     int check;
 
     printf("MAX32660 reads data from EEPROM.\n");
@@ -152,7 +151,6 @@ uint8_t I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
     	printf("Check not successful");
         return 1; // check for this in error
     } else {
-
 		if((rc = I2C_MasterRead(I2C_MASTER, I2C_MEM_ADDR, readBuffer, 1, 0)) != 1) { // with restart
 			printf("Error reading %d\n", rc);
 			return 1;
@@ -160,6 +158,7 @@ uint8_t I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
 			readByte = readBuffer[0];
 			printf("\tSuccessfully read data.\n");
 			printf("Data byte read was 0x%X (%d)\n",readByte,readByte);
+			return 0;
 		}
     }
 }
@@ -168,7 +167,6 @@ uint8_t I2C_ByteRead(uint8_t *dataAddress,uint8_t dataByte, uint8_t addlen)
 int I2C_BufferWrite(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen, uint8_t buflen)
 {
 	uint8_t rc;
-	uint8_t reg;
     uint8_t writeBuffer[PAGE_LIMIT+3];
 
     //Set Address as the bytes to be written first
@@ -189,43 +187,58 @@ int I2C_BufferWrite(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen, u
     //Set up for ACK polling
     timeOut = 0;
 
-    printf("Master writes data to Slave.\n");
-    	if((rc = I2C_MasterWrite(I2C_MASTER, I2C_MEM_ADDR, writeBuffer, buflen+addlen, 0)) != (buflen+addlen)) { // with restart
-    		printf("Error writing %d\n", rc);
-    		return 1;
-    	}
+    const uint8_t* buffPoint = &writeBuffer;
+
+    printf("MAX32660 writes data to EEPROM.\n");
+	if((rc = I2C_MasterWrite(I2C_MASTER, I2C_MEM_ADDR, buffPoint, buflen+addlen, 0)) != (buflen+addlen)) { // with restart
+		printf("\tError writing %d\n", rc);
+		return 1;
+	} else {
+		printf("\tSuccessfully wrote %d bytes (%d bytes address and %d bytes data)\n", buflen, addlen, (buflen-addlen));
+		return 0;
+	}
 }
-void I2C_BufferRead(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen,uint8_t buflen)
+
+int I2C_BufferRead(uint8_t *dataAddress, uint8_t *dataBuffer, uint8_t addlen,uint8_t buflen)
 {
 	uint8_t rc;
-    int check = 0;
+    int check;
 
-    //Write Address from where to read
+    printf("MAX32660 reads data from EEPROM.\n");
+
+    //Write the address to the slave
+    printf("\tQuerying address:\n\t");
     check = I2C_ByteWrite(dataAddress,NULL,addlen);
-
-    //check if address write is successful
-    if(check == 1)
-        return; // see if this works
 
     //Set up for ACK polling
     timeOut = 0;
 
-    printf("Master reads data from Slave.\n");
-    	if((rc = I2C_MasterRead(I2C_MASTER, I2C_MEM_ADDR, dataBuffer, buflen, 0)) != buflen) { // with restart
-    		printf("Error writing %d\n", rc);
-    	}
+    //If not successful, return to function
+	if(check == 1) {
+		printf("Check not successful");
+		return 1; // check for this in error
+	} else {
+		if((rc = I2C_MasterRead(I2C_MASTER, I2C_MEM_ADDR, dataBuffer, buflen, 0)) != buflen) { // with restart
+			printf("Error reading %d\n", rc);
+			return 1;
+		} else {
+			printf("\tSuccessfully read data.\nRead buffer is:\t\t");
+			print_buffer(&readBuffer);
+			return 0;
+		}
+	}
+
+
 }
 
-void print_readbuffer(void)
+void print_buffer(uint8_t* buffPoint)
 {
     int i;
-
-    printf("\nread buffer: ");
     for(i = 0; i < 16; ++i) {
-        printf("%d\t", readBuffer[i]);
+        printf("%d\t", buffPoint[i]);
     }
     printf("\n");
-    //return;
+    return;
 }
 
 // *****************************************************************************
@@ -257,21 +270,22 @@ int main(void)
     NVIC_EnableIRQ(I2C0_IRQn);
 
 
-    printf("\n***** I2C Memory Example *****\n");
-    printf("This example uses the I2C Master to read/write from the 24LC128 Memory chip.\n");
+    printf("\n***** I2C Memory Script *****\n");
+    printf("This example uses the MAX32660 I2C Master to read/write from the 24LC128 EEPROM Memory Chip.\n");
 
     uint8_t input = 0x5B;
-    uint8_t addressBuffer[] = {0xAB, 0x10} ;
+    uint8_t addressBuffer[] = {0xAB, 0x10};
     printf("\n\nWriting one byte (0x%X, equivalent to %d) at address {0x%X,0x%X}:\n", input, input, addressBuffer[0],addressBuffer[1]);
     //Writes a byte of data to address specified
     r = I2C_ByteWrite(&addressBuffer,input,sizeof(addressBuffer));
     //Reads a byte of data stored at the address specified
     r = I2C_ByteRead(&addressBuffer,&readByte,sizeof(addressBuffer));
 
+    printf("\n\nWriting data buffer to address {0x%X,0x%X}\n", input, input, addressBuffer[0],addressBuffer[1]);
+    printf("Input buffer is: \t"); print_buffer(&sourceData);
     //Write a specified number of data bytes beginning at the specified address
-    //I2C_BufferWrite(&addressBuffer,&sourceData,sizeof(addressBuffer),4);
-
+    I2C_BufferWrite(&addressBuffer,&sourceData,sizeof(addressBuffer),16);
     //Reads a specified number of data bytes beginning at the specified address
-    //I2C_BufferRead(&addressBuffer,&readBuffer,sizeof(addressBuffer),4);
+    I2C_BufferRead(&addressBuffer,&readBuffer,sizeof(addressBuffer),16);
 
 }
