@@ -1883,234 +1883,234 @@ LOAD c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/h
                 0x00000194       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
                 0x00000194                I2C0_IRQHandler
  .text.I2C_ByteWrite
-                0x000001a4       0x78 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+                0x000001a4       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
                 0x000001a4                I2C_ByteWrite
  .text.I2C_ByteRead
-                0x0000021c       0x94 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
-                0x0000021c                I2C_ByteRead
+                0x00000220       0x94 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+                0x00000220                I2C_ByteRead
  .text.I2C_BufferWrite
-                0x000002b0       0x90 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
-                0x000002b0                I2C_BufferWrite
+                0x000002b4       0x98 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+                0x000002b4                I2C_BufferWrite
  .text.print_buffer
-                0x00000340       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
-                0x00000340                print_buffer
+                0x0000034c       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+                0x0000034c                print_buffer
  .text.I2C_BufferRead
-                0x00000364       0x8c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
-                0x00000364                I2C_BufferRead
- .text.main     0x000003f0      0x128 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
-                0x000003f0                main
+                0x00000370       0x8c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+                0x00000370                I2C_BufferRead
+ .text.main     0x000003fc      0x128 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+                0x000003fc                main
  .text.mxc_assert
-                0x00000518       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
-                0x00000518                mxc_assert
+                0x00000524       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
+                0x00000524                mxc_assert
  .text.Console_Init
-                0x00000528       0x1c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
-                0x00000528                Console_Init
+                0x00000534       0x1c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
+                0x00000534                Console_Init
  .text.Board_Init
-                0x00000544       0x6c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
-                0x00000544                Board_Init
+                0x00000550       0x6c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
+                0x00000550                Board_Init
  .text.NMI_Handler
-                0x000005b0        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
-                0x000005b0                NMI_Handler
- .text._close   0x000005b4        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
-                0x000005b4                _close
- .text._isatty  0x000005ba        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
-                0x000005ba                _isatty
- .text._lseek   0x000005c0        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
-                0x000005c0                _lseek
- .text._fstat   0x000005c6        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
-                0x000005c6                _fstat
- .text._read    0x000005cc       0x5c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
-                0x000005cc                _read
- .text._write   0x00000628       0x50 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
-                0x00000628                _write
- .text.LED_Off  0x00000678       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
-                0x00000678                LED_Off
+                0x000005bc        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
+                0x000005bc                NMI_Handler
+ .text._close   0x000005c0        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+                0x000005c0                _close
+ .text._isatty  0x000005c6        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+                0x000005c6                _isatty
+ .text._lseek   0x000005cc        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+                0x000005cc                _lseek
+ .text._fstat   0x000005d2        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+                0x000005d2                _fstat
+ .text._read    0x000005d8       0x5c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+                0x000005d8                _read
+ .text._write   0x00000634       0x50 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+                0x00000634                _write
+ .text.LED_Off  0x00000684       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
+                0x00000684                LED_Off
  .text.LED_Init
-                0x000006b0       0x3c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
-                0x000006b0                LED_Init
- .text.PB_Init  0x000006ec       0x34 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
-                0x000006ec                PB_Init
+                0x000006bc       0x3c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
+                0x000006bc                LED_Init
+ .text.PB_Init  0x000006f8       0x34 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
+                0x000006f8                PB_Init
  .text.GPIO0_IRQHandler
-                0x00000720        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
-                0x00000720                GPIO0_IRQHandler
- *fill*         0x0000072a        0x2 
- .text          0x0000072c       0xe4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/startup_max32660.o
-                0x0000072c                Reset_Handler
-                0x0000076a                HardFault_Handler
-                0x0000076c                MemManage_Handler
-                0x0000076e                BusFault_Handler
-                0x00000770                UsageFault_Handler
-                0x00000772                SVC_Handler
-                0x00000774                DebugMon_Handler
-                0x00000776                PendSV_Handler
-                0x00000778                Default_Handler
-                0x0000077a                PF_IRQHandler
-                0x0000077c                WDT0_IRQHandler
-                0x0000077e                RSV00_IRQHandler
-                0x00000780                RTC_IRQHandler
-                0x00000782                RSV1_IRQHandler
-                0x00000784                TMR0_IRQHandler
-                0x00000786                TMR1_IRQHandler
-                0x00000788                TMR2_IRQHandler
-                0x0000078a                RSV02_IRQHandler
-                0x0000078c                RSV03_IRQHandler
-                0x0000078e                RSV04_IRQHandler
-                0x00000790                RSV05_IRQHandler
-                0x00000792                RSV06_IRQHandler
-                0x00000796                UART0_IRQHandler
-                0x00000798                UART1_IRQHandler
-                0x0000079a                SPI0_IRQHandler
-                0x0000079c                SPI1_IRQHandler
-                0x0000079e                RSV07_IRQHandler
-                0x000007a0                RSV08_IRQHandler
-                0x000007a2                RSV09_IRQHandler
-                0x000007a4                RSV10_IRQHandler
-                0x000007a6                RSV11_IRQHandler
-                0x000007a8                FLC_IRQHandler
-                0x000007ac                RSV12_IRQHandler
-                0x000007ae                RSV13_IRQHandler
-                0x000007b0                RSV14_IRQHandler
-                0x000007b2                DMA0_IRQHandler
-                0x000007b4                DMA1_IRQHandler
-                0x000007b6                DMA2_IRQHandler
-                0x000007b8                DMA3_IRQHandler
-                0x000007ba                RSV15_IRQHandler
-                0x000007bc                RSV16_IRQHandler
-                0x000007be                RSV17_IRQHandler
-                0x000007c0                RSV18_IRQHandler
-                0x000007c2                I2C1_IRQHandler
-                0x000007c4                RSV19_IRQHandler
-                0x000007c6                RSV20_IRQHandler
-                0x000007c8                RSV21_IRQHandler
-                0x000007ca                RSV22_IRQHandler
-                0x000007cc                RSV23_IRQHandler
-                0x000007ce                RSV24_IRQHandler
-                0x000007d0                RSV25_IRQHandler
-                0x000007d2                RSV26_IRQHandler
-                0x000007d4                RSV27_IRQHandler
-                0x000007d6                RSV28_IRQHandler
-                0x000007d8                RSV29_IRQHandler
-                0x000007da                RSV30_IRQHandler
-                0x000007dc                RSV31_IRQHandler
-                0x000007de                RSV32_IRQHandler
-                0x000007e0                RSV33_IRQHandler
-                0x000007e2                RSV34_IRQHandler
-                0x000007e4                RSV35_IRQHandler
-                0x000007e6                GPIOWAKE_IRQHandler
- .text._sbrk    0x00000810       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/heap.o
-                0x00000810                _sbrk
+                0x0000072c        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
+                0x0000072c                GPIO0_IRQHandler
+ *fill*         0x00000736        0x2 
+ .text          0x00000738       0xe4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/startup_max32660.o
+                0x00000738                Reset_Handler
+                0x00000776                HardFault_Handler
+                0x00000778                MemManage_Handler
+                0x0000077a                BusFault_Handler
+                0x0000077c                UsageFault_Handler
+                0x0000077e                SVC_Handler
+                0x00000780                DebugMon_Handler
+                0x00000782                PendSV_Handler
+                0x00000784                Default_Handler
+                0x00000786                PF_IRQHandler
+                0x00000788                WDT0_IRQHandler
+                0x0000078a                RSV00_IRQHandler
+                0x0000078c                RTC_IRQHandler
+                0x0000078e                RSV1_IRQHandler
+                0x00000790                TMR0_IRQHandler
+                0x00000792                TMR1_IRQHandler
+                0x00000794                TMR2_IRQHandler
+                0x00000796                RSV02_IRQHandler
+                0x00000798                RSV03_IRQHandler
+                0x0000079a                RSV04_IRQHandler
+                0x0000079c                RSV05_IRQHandler
+                0x0000079e                RSV06_IRQHandler
+                0x000007a2                UART0_IRQHandler
+                0x000007a4                UART1_IRQHandler
+                0x000007a6                SPI0_IRQHandler
+                0x000007a8                SPI1_IRQHandler
+                0x000007aa                RSV07_IRQHandler
+                0x000007ac                RSV08_IRQHandler
+                0x000007ae                RSV09_IRQHandler
+                0x000007b0                RSV10_IRQHandler
+                0x000007b2                RSV11_IRQHandler
+                0x000007b4                FLC_IRQHandler
+                0x000007b8                RSV12_IRQHandler
+                0x000007ba                RSV13_IRQHandler
+                0x000007bc                RSV14_IRQHandler
+                0x000007be                DMA0_IRQHandler
+                0x000007c0                DMA1_IRQHandler
+                0x000007c2                DMA2_IRQHandler
+                0x000007c4                DMA3_IRQHandler
+                0x000007c6                RSV15_IRQHandler
+                0x000007c8                RSV16_IRQHandler
+                0x000007ca                RSV17_IRQHandler
+                0x000007cc                RSV18_IRQHandler
+                0x000007ce                I2C1_IRQHandler
+                0x000007d0                RSV19_IRQHandler
+                0x000007d2                RSV20_IRQHandler
+                0x000007d4                RSV21_IRQHandler
+                0x000007d6                RSV22_IRQHandler
+                0x000007d8                RSV23_IRQHandler
+                0x000007da                RSV24_IRQHandler
+                0x000007dc                RSV25_IRQHandler
+                0x000007de                RSV26_IRQHandler
+                0x000007e0                RSV27_IRQHandler
+                0x000007e2                RSV28_IRQHandler
+                0x000007e4                RSV29_IRQHandler
+                0x000007e6                RSV30_IRQHandler
+                0x000007e8                RSV31_IRQHandler
+                0x000007ea                RSV32_IRQHandler
+                0x000007ec                RSV33_IRQHandler
+                0x000007ee                RSV34_IRQHandler
+                0x000007f0                RSV35_IRQHandler
+                0x000007f2                GPIOWAKE_IRQHandler
+ .text._sbrk    0x0000081c       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/heap.o
+                0x0000081c                _sbrk
  .text.SystemCoreClockUpdate
-                0x00000850       0x60 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
-                0x00000850                SystemCoreClockUpdate
- .text.PreInit  0x000008b0        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
-                0x000008b0                PreInit
+                0x0000085c       0x60 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
+                0x0000085c                SystemCoreClockUpdate
+ .text.PreInit  0x000008bc        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
+                0x000008bc                PreInit
  .text.SystemInit
-                0x000008b4       0x8c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
-                0x000008b4                SystemInit
+                0x000008c0       0x8c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
+                0x000008c0                SystemInit
  .text.UART_Init
-                0x00000940       0xac c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
-                0x00000940                UART_Init
+                0x0000094c       0xac c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
+                0x0000094c                UART_Init
  .text.UART_ReadByte
-                0x000009ec        0xe c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
-                0x000009ec                UART_ReadByte
+                0x000009f8        0xe c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
+                0x000009f8                UART_ReadByte
  .text.UART_WriteByte
-                0x000009fa        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
-                0x000009fa                UART_WriteByte
- *fill*         0x00000a06        0x2 
+                0x00000a06        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
+                0x00000a06                UART_WriteByte
+ *fill*         0x00000a12        0x2 
  .text.GPIO_Config
-                0x00000a08       0xfc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000a08                GPIO_Config
+                0x00000a14       0xfc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000a14                GPIO_Config
  .text.GPIO_OutClr
-                0x00000b04       0x14 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000b04                GPIO_OutClr
+                0x00000b10       0x14 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000b10                GPIO_OutClr
  .text.GPIO_Handler
-                0x00000b18       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000b18                GPIO_Handler
+                0x00000b24       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000b24                GPIO_Handler
  .text.I2C_Recover
-                0x00000b70       0x16 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
- *fill*         0x00000b86        0x2 
+                0x00000b7c       0x16 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+ *fill*         0x00000b92        0x2 
  .text.I2C_FreeCallback
-                0x00000b88       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x00000b94       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
  .text.I2C_MasterHandler
-                0x00000bac      0x238 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x00000bb8      0x238 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
  .text.I2C_Init
-                0x00000de4      0x24c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x00000de4                I2C_Init
+                0x00000df0      0x24c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x00000df0                I2C_Init
  .text.I2C_Shutdown
-                0x00001030       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x00001030                I2C_Shutdown
+                0x0000103c       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x0000103c                I2C_Shutdown
  .text.I2C_MasterWrite
-                0x000010ac       0xe8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x000010ac                I2C_MasterWrite
+                0x000010b8       0xe8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x000010b8                I2C_MasterWrite
  .text.I2C_MasterRead
-                0x00001194       0xec c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x00001194                I2C_MasterRead
+                0x000011a0       0xec c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x000011a0                I2C_MasterRead
  .text.I2C_Handler
-                0x00001280      0x228 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x00001280                I2C_Handler
+                0x0000128c      0x228 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x0000128c                I2C_Handler
  .text.mxc_delay_init
-                0x000014a8       0x98 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x000014b4       0x98 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
  .text.mxc_delay_start
-                0x00001540       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001540                mxc_delay_start
+                0x0000154c       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x0000154c                mxc_delay_start
  .text.mxc_delay_stop
-                0x00001580       0x20 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001580                mxc_delay_stop
+                0x0000158c       0x20 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x0000158c                mxc_delay_stop
  .text.mxc_delay_handler
-                0x000015a0       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x000015a0                mxc_delay_handler
+                0x000015ac       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x000015ac                mxc_delay_handler
  .text.SysTick_Handler
-                0x000015f4        0x8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x000015f4                SysTick_Handler
+                0x00001600        0x8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x00001600                SysTick_Handler
  .text.mxc_delay_check
-                0x000015fc       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x000015fc                mxc_delay_check
+                0x00001608       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x00001608                mxc_delay_check
  .text.mxc_delay
-                0x00001650       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001650                mxc_delay
+                0x0000165c       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x0000165c                mxc_delay
  .text.mxc_free_lock
-                0x000016cc        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
-                0x000016cc                mxc_free_lock
+                0x000016d8        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
+                0x000016d8                mxc_free_lock
  .text.SYS_Clock_Timeout
-                0x000016d6       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
- *fill*         0x000016fa        0x2 
+                0x000016e2       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+ *fill*         0x00001706        0x2 
  .text.SYS_Clock_Select
-                0x000016fc      0x208 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x000016fc                SYS_Clock_Select
+                0x00001708      0x208 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001708                SYS_Clock_Select
  .text.SYS_UART_Init
-                0x00001904       0xa4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001904                SYS_UART_Init
+                0x00001910       0xa4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001910                SYS_UART_Init
  .text.SYS_I2C_Init
-                0x000019a8       0x48 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x000019a8                SYS_I2C_Init
+                0x000019b4       0x48 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x000019b4                SYS_I2C_Init
  .text.SYS_I2C_Shutdown
-                0x000019f0       0x78 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x000019f0                SYS_I2C_Shutdown
+                0x000019fc       0x78 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x000019fc                SYS_I2C_Shutdown
  .text.SYS_I2C_GetFreq
-                0x00001a68        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001a68                SYS_I2C_GetFreq
+                0x00001a74        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001a74                SYS_I2C_GetFreq
  .text.SYS_ClockDisable
-                0x00001a74       0x22 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001a74                SYS_ClockDisable
+                0x00001a80       0x22 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001a80                SYS_ClockDisable
  .text.SYS_ClockEnable
-                0x00001a96       0x26 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001a96                SYS_ClockEnable
- .text.__errno  0x00001abc        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
-                0x00001abc                __errno
+                0x00001aa2       0x26 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001aa2                SYS_ClockEnable
+ .text.__errno  0x00001ac8        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+                0x00001ac8                __errno
  .text.__libc_init_array
-                0x00001ac8       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
-                0x00001ac8                __libc_init_array
- .text.memset   0x00001b18       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
-                0x00001b18                memset
- .text.printf   0x00001bb4       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
-                0x00001bb4                printf
- .text.putchar  0x00001bdc       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-putchar.o)
-                0x00001bdc                putchar
- .text._puts_r  0x00001bf0       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
-                0x00001bf0                _puts_r
- .text.puts     0x00001c8c       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
-                0x00001c8c                puts
- *fill*         0x00001c9c       0x24 
+                0x00001ad4       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
+                0x00001ad4                __libc_init_array
+ .text.memset   0x00001b24       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+                0x00001b24                memset
+ .text.printf   0x00001bc0       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
+                0x00001bc0                printf
+ .text.putchar  0x00001be8       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-putchar.o)
+                0x00001be8                putchar
+ .text._puts_r  0x00001bfc       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
+                0x00001bfc                _puts_r
+ .text.puts     0x00001c98       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
+                0x00001c98                puts
+ *fill*         0x00001ca8       0x18 
  .text          0x00001cc0       0xdc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
                 0x00001cc0                strlen
  *fill*         0x00001d9c        0x4 
@@ -2814,21 +2814,21 @@ OUTPUT(c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/I2C_M
  .comment       0x0000007f       0x80 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
  .comment       0x0000007f       0x80 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
 
-.debug_info     0x00000000     0xcb47
- .debug_info    0x00000000     0x18f7 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
- .debug_info    0x000018f7     0x11cf c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
- .debug_info    0x00002ac6      0xfa5 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
- .debug_info    0x00003a6b      0xbfe c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
- .debug_info    0x00004669      0x8bb c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
- .debug_info    0x00004f24      0x98d c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/heap.o
- .debug_info    0x000058b1     0x1094 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
- .debug_info    0x00006945     0x17be c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
- .debug_info    0x00008103      0x8c0 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
- .debug_info    0x000089c3     0x1892 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
- .debug_info    0x0000a255      0x3f7 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
- .debug_info    0x0000a64c      0x37b c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
- .debug_info    0x0000a9c7     0x1e8f c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
- .debug_info    0x0000c856      0x2f1 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+.debug_info     0x00000000     0xcb4b
+ .debug_info    0x00000000     0x18fb c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+ .debug_info    0x000018fb     0x11cf c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
+ .debug_info    0x00002aca      0xfa5 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+ .debug_info    0x00003a6f      0xbfe c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
+ .debug_info    0x0000466d      0x8bb c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
+ .debug_info    0x00004f28      0x98d c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/heap.o
+ .debug_info    0x000058b5     0x1094 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
+ .debug_info    0x00006949     0x17be c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
+ .debug_info    0x00008107      0x8c0 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
+ .debug_info    0x000089c7     0x1892 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+ .debug_info    0x0000a259      0x3f7 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+ .debug_info    0x0000a650      0x37b c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
+ .debug_info    0x0000a9cb     0x1e8f c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+ .debug_info    0x0000c85a      0x2f1 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
 
 .debug_abbrev   0x00000000     0x22c2
  .debug_abbrev  0x00000000      0x351 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
@@ -2846,20 +2846,20 @@ OUTPUT(c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/I2C_M
  .debug_abbrev  0x00001e52      0x3ba c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
  .debug_abbrev  0x0000220c       0xb6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
 
-.debug_loc      0x00000000     0x3f71
- .debug_loc     0x00000000      0x56c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
- .debug_loc     0x0000056c       0xdb c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
- .debug_loc     0x00000647      0x2e1 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
- .debug_loc     0x00000928      0x11c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
- .debug_loc     0x00000a44      0x1e2 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
- .debug_loc     0x00000c26       0x63 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/heap.o
- .debug_loc     0x00000c89       0x83 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
- .debug_loc     0x00000d0c      0xcb0 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
- .debug_loc     0x000019bc      0x392 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
- .debug_loc     0x00001d4e     0x1400 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
- .debug_loc     0x0000314e      0x182 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
- .debug_loc     0x000032d0       0x73 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
- .debug_loc     0x00003343      0xc2e c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+.debug_loc      0x00000000     0x3f9c
+ .debug_loc     0x00000000      0x597 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/main.o
+ .debug_loc     0x00000597       0xdb c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/board.o
+ .debug_loc     0x00000672      0x2e1 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/stdio.o
+ .debug_loc     0x00000953      0x11c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/led.o
+ .debug_loc     0x00000a6f      0x1e2 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/pb.o
+ .debug_loc     0x00000c51       0x63 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/heap.o
+ .debug_loc     0x00000cb4       0x83 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/system_max32660.o
+ .debug_loc     0x00000d37      0xcb0 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(uart.o)
+ .debug_loc     0x000019e7      0x392 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(gpio.o)
+ .debug_loc     0x00001d79     0x1400 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(i2c.o)
+ .debug_loc     0x00003179      0x182 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+ .debug_loc     0x000032fb       0x73 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
+ .debug_loc     0x0000336e      0xc2e c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_Memory/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
 
 .debug_aranges  0x00000000      0x578
  .debug_aranges
