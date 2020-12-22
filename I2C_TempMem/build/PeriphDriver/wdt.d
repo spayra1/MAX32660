@@ -29,4 +29,4 @@ c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_TempMem/build/PeriphDrive
  Include/dma.h \
  c:/Maxim/Firmware/MAX32660/Libraries/CMSIS/Device/Maxim/MAX32660/Include/dma_regs.h \
  c:/Maxim/Firmware/MAX32660/Libraries/CMSIS/Device/Maxim/MAX32660/Include/wdt_regs.h \
- Include/wdt.h
+ Include/wdt.h Include/mxc_sys.h

@@ -96,7 +96,7 @@ volatile int i2c_flag;
 volatile int timer_flag;
 
 #define CONT_LED_IDX 0
-#define INTERVAL_TIME_CONT 3
+#define INTERVAL_TIME_CONT 1
 #define CONT_TIMER	MXC_TMR0
 
 /***** Functions *****/

@@ -30,4 +30,4 @@ c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_TempMem/build/PeriphDrive
  c:\maxim\toolchain\arm-none-eabi\include\sys\cdefs.h \
  c:\maxim\toolchain\arm-none-eabi\include\sys\_locale.h \
  c:\maxim\toolchain\arm-none-eabi\include\sys\string.h \
- Include/nvic_table.h
+ Include/nvic_table.h Include/mxc_config.h

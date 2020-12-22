@@ -2457,7 +2457,7 @@ END GROUP
 LOAD c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
 LOAD c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 
-.text           0x00000000     0x7ea4
+.text           0x00000000     0x7e64
                 0x00000000                _text = .
  *(.isr_vector)
  .isr_vector    0x00000000      0x11c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/startup_max32660.o
@@ -2492,668 +2492,667 @@ LOAD c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/h
                 0x000006d8       0x4c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
                 0x000006d8                measurement_loop
  .text.ContinuousTimer
-                0x00000724       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+                0x00000724       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
                 0x00000724                ContinuousTimer
  .text.I2C0_IRQHandler
-                0x0000077c       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
-                0x0000077c                I2C0_IRQHandler
- .text.main     0x0000078c       0x88 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
-                0x0000078c                main
+                0x00000778       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+                0x00000778                I2C0_IRQHandler
+ .text.main     0x00000788       0x88 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+                0x00000788                main
  .text.i2c_init
-                0x00000814       0x60 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/i2c_bus.o
-                0x00000814                i2c_init
+                0x00000810       0x60 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/i2c_bus.o
+                0x00000810                i2c_init
  .text.mxc_assert
-                0x00000874       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00000874                mxc_assert
+                0x00000870       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00000870                mxc_assert
  .text.Console_Init
-                0x00000884       0x1c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00000884                Console_Init
+                0x00000880       0x1c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00000880                Console_Init
  .text.Board_Init
-                0x000008a0       0x6c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x000008a0                Board_Init
+                0x0000089c       0x6c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x0000089c                Board_Init
  .text.NMI_Handler
-                0x0000090c        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x0000090c                NMI_Handler
- .text._close   0x00000910        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
-                0x00000910                _close
- .text._isatty  0x00000916        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
-                0x00000916                _isatty
- .text._lseek   0x0000091c        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
-                0x0000091c                _lseek
- .text._fstat   0x00000922        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
-                0x00000922                _fstat
- .text._read    0x00000928       0x5c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
-                0x00000928                _read
- .text._write   0x00000984       0x50 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
-                0x00000984                _write
- .text.LED_Off  0x000009d4       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
-                0x000009d4                LED_Off
+                0x00000908        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00000908                NMI_Handler
+ .text._close   0x0000090c        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
+                0x0000090c                _close
+ .text._isatty  0x00000912        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
+                0x00000912                _isatty
+ .text._lseek   0x00000918        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
+                0x00000918                _lseek
+ .text._fstat   0x0000091e        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
+                0x0000091e                _fstat
+ .text._read    0x00000924       0x5c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
+                0x00000924                _read
+ .text._write   0x00000980       0x50 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/stdio.o
+                0x00000980                _write
+ .text.LED_Off  0x000009d0       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
+                0x000009d0                LED_Off
  .text.LED_Init
-                0x00000a0c       0x3c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
-                0x00000a0c                LED_Init
+                0x00000a08       0x3c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
+                0x00000a08                LED_Init
  .text.LED_Toggle
-                0x00000a48       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
-                0x00000a48                LED_Toggle
- .text.PB_Init  0x00000a80       0x34 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/pb.o
-                0x00000a80                PB_Init
+                0x00000a44       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
+                0x00000a44                LED_Toggle
+ .text.PB_Init  0x00000a7c       0x34 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/pb.o
+                0x00000a7c                PB_Init
  .text.GPIO0_IRQHandler
-                0x00000ab4        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/pb.o
-                0x00000ab4                GPIO0_IRQHandler
- *fill*         0x00000abe        0x2 
- .text          0x00000ac0       0xe4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/startup_max32660.o
-                0x00000ac0                Reset_Handler
-                0x00000afe                HardFault_Handler
-                0x00000b00                MemManage_Handler
-                0x00000b02                BusFault_Handler
-                0x00000b04                UsageFault_Handler
-                0x00000b06                SVC_Handler
-                0x00000b08                DebugMon_Handler
-                0x00000b0a                PendSV_Handler
-                0x00000b0c                Default_Handler
-                0x00000b0e                PF_IRQHandler
-                0x00000b10                WDT0_IRQHandler
-                0x00000b12                RSV00_IRQHandler
-                0x00000b14                RTC_IRQHandler
-                0x00000b16                RSV1_IRQHandler
-                0x00000b18                TMR0_IRQHandler
-                0x00000b1a                TMR1_IRQHandler
-                0x00000b1c                TMR2_IRQHandler
-                0x00000b1e                RSV02_IRQHandler
-                0x00000b20                RSV03_IRQHandler
-                0x00000b22                RSV04_IRQHandler
-                0x00000b24                RSV05_IRQHandler
-                0x00000b26                RSV06_IRQHandler
-                0x00000b2a                UART0_IRQHandler
-                0x00000b2c                UART1_IRQHandler
-                0x00000b2e                SPI0_IRQHandler
-                0x00000b30                SPI1_IRQHandler
-                0x00000b32                RSV07_IRQHandler
-                0x00000b34                RSV08_IRQHandler
-                0x00000b36                RSV09_IRQHandler
-                0x00000b38                RSV10_IRQHandler
-                0x00000b3a                RSV11_IRQHandler
-                0x00000b3c                FLC_IRQHandler
-                0x00000b40                RSV12_IRQHandler
-                0x00000b42                RSV13_IRQHandler
-                0x00000b44                RSV14_IRQHandler
-                0x00000b46                DMA0_IRQHandler
-                0x00000b48                DMA1_IRQHandler
-                0x00000b4a                DMA2_IRQHandler
-                0x00000b4c                DMA3_IRQHandler
-                0x00000b4e                RSV15_IRQHandler
-                0x00000b50                RSV16_IRQHandler
-                0x00000b52                RSV17_IRQHandler
-                0x00000b54                RSV18_IRQHandler
-                0x00000b56                I2C1_IRQHandler
-                0x00000b58                RSV19_IRQHandler
-                0x00000b5a                RSV20_IRQHandler
-                0x00000b5c                RSV21_IRQHandler
-                0x00000b5e                RSV22_IRQHandler
-                0x00000b60                RSV23_IRQHandler
-                0x00000b62                RSV24_IRQHandler
-                0x00000b64                RSV25_IRQHandler
-                0x00000b66                RSV26_IRQHandler
-                0x00000b68                RSV27_IRQHandler
-                0x00000b6a                RSV28_IRQHandler
-                0x00000b6c                RSV29_IRQHandler
-                0x00000b6e                RSV30_IRQHandler
-                0x00000b70                RSV31_IRQHandler
-                0x00000b72                RSV32_IRQHandler
-                0x00000b74                RSV33_IRQHandler
-                0x00000b76                RSV34_IRQHandler
-                0x00000b78                RSV35_IRQHandler
-                0x00000b7a                GPIOWAKE_IRQHandler
- .text._sbrk    0x00000ba4       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/heap.o
-                0x00000ba4                _sbrk
+                0x00000ab0        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/pb.o
+                0x00000ab0                GPIO0_IRQHandler
+ *fill*         0x00000aba        0x2 
+ .text          0x00000abc       0xe4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/startup_max32660.o
+                0x00000abc                Reset_Handler
+                0x00000afa                HardFault_Handler
+                0x00000afc                MemManage_Handler
+                0x00000afe                BusFault_Handler
+                0x00000b00                UsageFault_Handler
+                0x00000b02                SVC_Handler
+                0x00000b04                DebugMon_Handler
+                0x00000b06                PendSV_Handler
+                0x00000b08                Default_Handler
+                0x00000b0a                PF_IRQHandler
+                0x00000b0c                WDT0_IRQHandler
+                0x00000b0e                RSV00_IRQHandler
+                0x00000b10                RTC_IRQHandler
+                0x00000b12                RSV1_IRQHandler
+                0x00000b14                TMR0_IRQHandler
+                0x00000b16                TMR1_IRQHandler
+                0x00000b18                TMR2_IRQHandler
+                0x00000b1a                RSV02_IRQHandler
+                0x00000b1c                RSV03_IRQHandler
+                0x00000b1e                RSV04_IRQHandler
+                0x00000b20                RSV05_IRQHandler
+                0x00000b22                RSV06_IRQHandler
+                0x00000b26                UART0_IRQHandler
+                0x00000b28                UART1_IRQHandler
+                0x00000b2a                SPI0_IRQHandler
+                0x00000b2c                SPI1_IRQHandler
+                0x00000b2e                RSV07_IRQHandler
+                0x00000b30                RSV08_IRQHandler
+                0x00000b32                RSV09_IRQHandler
+                0x00000b34                RSV10_IRQHandler
+                0x00000b36                RSV11_IRQHandler
+                0x00000b38                FLC_IRQHandler
+                0x00000b3c                RSV12_IRQHandler
+                0x00000b3e                RSV13_IRQHandler
+                0x00000b40                RSV14_IRQHandler
+                0x00000b42                DMA0_IRQHandler
+                0x00000b44                DMA1_IRQHandler
+                0x00000b46                DMA2_IRQHandler
+                0x00000b48                DMA3_IRQHandler
+                0x00000b4a                RSV15_IRQHandler
+                0x00000b4c                RSV16_IRQHandler
+                0x00000b4e                RSV17_IRQHandler
+                0x00000b50                RSV18_IRQHandler
+                0x00000b52                I2C1_IRQHandler
+                0x00000b54                RSV19_IRQHandler
+                0x00000b56                RSV20_IRQHandler
+                0x00000b58                RSV21_IRQHandler
+                0x00000b5a                RSV22_IRQHandler
+                0x00000b5c                RSV23_IRQHandler
+                0x00000b5e                RSV24_IRQHandler
+                0x00000b60                RSV25_IRQHandler
+                0x00000b62                RSV26_IRQHandler
+                0x00000b64                RSV27_IRQHandler
+                0x00000b66                RSV28_IRQHandler
+                0x00000b68                RSV29_IRQHandler
+                0x00000b6a                RSV30_IRQHandler
+                0x00000b6c                RSV31_IRQHandler
+                0x00000b6e                RSV32_IRQHandler
+                0x00000b70                RSV33_IRQHandler
+                0x00000b72                RSV34_IRQHandler
+                0x00000b74                RSV35_IRQHandler
+                0x00000b76                GPIOWAKE_IRQHandler
+ .text._sbrk    0x00000ba0       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/heap.o
+                0x00000ba0                _sbrk
  .text.SystemCoreClockUpdate
-                0x00000be4       0x60 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/system_max32660.o
-                0x00000be4                SystemCoreClockUpdate
- .text.PreInit  0x00000c44        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/system_max32660.o
-                0x00000c44                PreInit
+                0x00000be0       0x60 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/system_max32660.o
+                0x00000be0                SystemCoreClockUpdate
+ .text.PreInit  0x00000c40        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/system_max32660.o
+                0x00000c40                PreInit
  .text.SystemInit
-                0x00000c48       0x8c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/system_max32660.o
-                0x00000c48                SystemInit
+                0x00000c44       0x8c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/system_max32660.o
+                0x00000c44                SystemInit
  .text.NVIC_SetRAM
-                0x00000cd4       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(nvic_table.o)
-                0x00000cd4                NVIC_SetRAM
+                0x00000cd0       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(nvic_table.o)
+                0x00000cd0                NVIC_SetRAM
  .text.NVIC_SetVector
-                0x00000cf8       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(nvic_table.o)
-                0x00000cf8                NVIC_SetVector
+                0x00000cf4       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(nvic_table.o)
+                0x00000cf4                NVIC_SetVector
  .text.UART_Init
-                0x00000d38       0xac c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(uart.o)
-                0x00000d38                UART_Init
+                0x00000d34       0xac c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(uart.o)
+                0x00000d34                UART_Init
  .text.UART_ReadByte
-                0x00000de4        0xe c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(uart.o)
-                0x00000de4                UART_ReadByte
+                0x00000de0        0xe c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(uart.o)
+                0x00000de0                UART_ReadByte
  .text.UART_WriteByte
-                0x00000df2        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(uart.o)
-                0x00000df2                UART_WriteByte
- *fill*         0x00000dfe        0x2 
+                0x00000dee        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(uart.o)
+                0x00000dee                UART_WriteByte
+ *fill*         0x00000dfa        0x2 
  .text.GPIO_Config
-                0x00000e00       0xfc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000e00                GPIO_Config
+                0x00000dfc       0xfc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000dfc                GPIO_Config
  .text.GPIO_OutClr
-                0x00000efc       0x14 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000efc                GPIO_OutClr
+                0x00000ef8       0x14 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000ef8                GPIO_OutClr
  .text.GPIO_OutToggle
-                0x00000f10       0x18 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000f10                GPIO_OutToggle
+                0x00000f0c       0x18 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000f0c                GPIO_OutToggle
  .text.GPIO_Handler
-                0x00000f28       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
-                0x00000f28                GPIO_Handler
+                0x00000f24       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
+                0x00000f24                GPIO_Handler
  .text.I2C_Recover
-                0x00000f80       0x16 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
- *fill*         0x00000f96        0x2 
+                0x00000f7c       0x16 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+ *fill*         0x00000f92        0x2 
  .text.I2C_FreeCallback
-                0x00000f98       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x00000f94       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
  .text.I2C_MasterHandler
-                0x00000fbc      0x238 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x00000fb8      0x238 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
  .text.I2C_Init
-                0x000011f4      0x24c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x000011f4                I2C_Init
+                0x000011f0      0x24c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x000011f0                I2C_Init
  .text.I2C_Shutdown
-                0x00001440       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x00001440                I2C_Shutdown
+                0x0000143c       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x0000143c                I2C_Shutdown
  .text.I2C_MasterWrite
-                0x000014bc       0xe8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x000014bc                I2C_MasterWrite
+                0x000014b8       0xe8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x000014b8                I2C_MasterWrite
  .text.I2C_MasterRead
-                0x000015a4       0xec c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x000015a4                I2C_MasterRead
+                0x000015a0       0xec c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x000015a0                I2C_MasterRead
  .text.I2C_Handler
-                0x00001690      0x228 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
-                0x00001690                I2C_Handler
+                0x0000168c      0x228 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+                0x0000168c                I2C_Handler
  .text.mxc_delay_init
-                0x000018b8       0x98 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x000018b4       0x98 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
  .text.mxc_delay_start
-                0x00001950       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001950                mxc_delay_start
+                0x0000194c       0x40 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x0000194c                mxc_delay_start
  .text.mxc_delay_stop
-                0x00001990       0x20 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001990                mxc_delay_stop
+                0x0000198c       0x20 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x0000198c                mxc_delay_stop
  .text.mxc_delay_handler
-                0x000019b0       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x000019b0                mxc_delay_handler
+                0x000019ac       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x000019ac                mxc_delay_handler
  .text.SysTick_Handler
-                0x00001a04        0x8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001a04                SysTick_Handler
+                0x00001a00        0x8 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x00001a00                SysTick_Handler
  .text.mxc_delay_check
-                0x00001a0c       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001a0c                mxc_delay_check
+                0x00001a08       0x54 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x00001a08                mxc_delay_check
  .text.mxc_delay
-                0x00001a60       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
-                0x00001a60                mxc_delay
+                0x00001a5c       0x7c c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_delay.o)
+                0x00001a5c                mxc_delay
  .text.mxc_free_lock
-                0x00001adc        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
-                0x00001adc                mxc_free_lock
+                0x00001ad8        0xa c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_lock.o)
+                0x00001ad8                mxc_free_lock
  .text.SYS_Clock_Timeout
-                0x00001ae6       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
- *fill*         0x00001b0a        0x2 
+                0x00001ae2       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+ *fill*         0x00001b06        0x2 
  .text.SYS_Clock_Select
-                0x00001b0c      0x208 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001b0c                SYS_Clock_Select
+                0x00001b08      0x208 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001b08                SYS_Clock_Select
  .text.SYS_UART_Init
-                0x00001d14       0xa4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001d14                SYS_UART_Init
+                0x00001d10       0xa4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001d10                SYS_UART_Init
  .text.SYS_I2C_Init
-                0x00001db8       0x48 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001db8                SYS_I2C_Init
+                0x00001db4       0x48 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001db4                SYS_I2C_Init
  .text.SYS_I2C_Shutdown
-                0x00001e00       0x78 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001e00                SYS_I2C_Shutdown
+                0x00001dfc       0x78 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001dfc                SYS_I2C_Shutdown
  .text.SYS_I2C_GetFreq
-                0x00001e78        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001e78                SYS_I2C_GetFreq
+                0x00001e74        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001e74                SYS_I2C_GetFreq
  .text.SYS_ClockDisable
-                0x00001e84       0x22 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001e84                SYS_ClockDisable
+                0x00001e80       0x22 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001e80                SYS_ClockDisable
  .text.SYS_ClockEnable
-                0x00001ea6       0x26 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001ea6                SYS_ClockEnable
+                0x00001ea2       0x26 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001ea2                SYS_ClockEnable
  .text.SYS_TMR_Init
-                0x00001ecc       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
-                0x00001ecc                SYS_TMR_Init
+                0x00001ec8       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_sys.o)
+                0x00001ec8                SYS_TMR_Init
  .text.TMR_Init
-                0x00001f24       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
-                0x00001f24                TMR_Init
+                0x00001f20       0x38 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
+                0x00001f20                TMR_Init
  .text.TMR_Enable
-                0x00001f5c       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
-                0x00001f5c                TMR_Enable
+                0x00001f58       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
+                0x00001f58                TMR_Enable
  .text.TMR_Disable
-                0x00001f80       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
-                0x00001f80                TMR_Disable
+                0x00001f7c       0x24 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
+                0x00001f7c                TMR_Disable
  .text.TMR_Config
-                0x00001fa4       0x44 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
-                0x00001fa4                TMR_Config
+                0x00001fa0       0x44 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
+                0x00001fa0                TMR_Config
  .text.TMR_IntClear
-                0x00001fe8        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
-                0x00001fe8                TMR_IntClear
- *fill*         0x00001fee        0x2 
- .text.__errno  0x00001ff0        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
-                0x00001ff0                __errno
+                0x00001fe4        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
+                0x00001fe4                TMR_IntClear
+ *fill*         0x00001fea        0x2 
+ .text.__errno  0x00001fec        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+                0x00001fec                __errno
  .text.__libc_init_array
-                0x00001ffc       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
-                0x00001ffc                __libc_init_array
- .text          0x0000204c      0x134 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
-                0x0000204c                memcpy
- .text.memset   0x00002180       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
-                0x00002180                memset
- .text.printf   0x0000221c       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
-                0x0000221c                printf
- .text.putchar  0x00002244       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-putchar.o)
-                0x00002244                putchar
- .text._puts_r  0x00002258       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
-                0x00002258                _puts_r
- .text.puts     0x000022f4       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
-                0x000022f4                puts
- *fill*         0x00002304       0x3c 
- .text          0x00002340       0xdc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
-                0x00002340                strlen
- *fill*         0x0000241c        0x4 
+                0x00001ff8       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
+                0x00001ff8                __libc_init_array
+ .text          0x00002048      0x134 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+                0x00002048                memcpy
+ .text.memset   0x0000217c       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+                0x0000217c                memset
+ .text.printf   0x00002218       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
+                0x00002218                printf
+ .text.putchar  0x00002240       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-putchar.o)
+                0x00002240                putchar
+ .text._puts_r  0x00002254       0x9c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
+                0x00002254                _puts_r
+ .text.puts     0x000022f0       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
+                0x000022f0                puts
+ .text          0x00002300       0xdc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+                0x00002300                strlen
+ *fill*         0x000023dc        0x4 
  .text._vfprintf_r
-                0x00002420     0x157c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
-                0x00002420                _vfprintf_r
+                0x000023e0     0x157c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+                0x000023e0                _vfprintf_r
  .text.__sbprintf
-                0x0000399c       0x84 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+                0x0000395c       0x84 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
  .text.__swsetup_r
-                0x00003a20       0xc8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wsetup.o)
-                0x00003a20                __swsetup_r
+                0x000039e0       0xc8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wsetup.o)
+                0x000039e0                __swsetup_r
  .text.startup.register_fini
-                0x00003ae8       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x00003afc        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
-                0x00003afc                atexit
- .text.quorem   0x00003b08      0x128 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
- .text._dtoa_r  0x00003c30      0xe4c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
-                0x00003c30                _dtoa_r
+                0x00003aa8       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x00003abc        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
+                0x00003abc                atexit
+ .text.quorem   0x00003ac8      0x128 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x00003bf0      0xe4c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
+                0x00003bf0                _dtoa_r
  .text.__sflush_r
-                0x00004a7c      0x140 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
-                0x00004a7c                __sflush_r
+                0x00004a3c      0x140 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
+                0x00004a3c                __sflush_r
  .text._fflush_r
-                0x00004bbc       0x54 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
-                0x00004bbc                _fflush_r
+                0x00004b7c       0x54 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
+                0x00004b7c                _fflush_r
  .text._cleanup_r
-                0x00004c10        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
-                0x00004c10                _cleanup_r
+                0x00004bd0        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+                0x00004bd0                _cleanup_r
  .text.std.isra.0
-                0x00004c1c       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
- .text.__sinit  0x00004c6c       0x58 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
-                0x00004c6c                __sinit
+                0x00004bdc       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+ .text.__sinit  0x00004c2c       0x58 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+                0x00004c2c                __sinit
  .text.__sfp_lock_acquire
-                0x00004cc4        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
-                0x00004cc4                __sfp_lock_acquire
+                0x00004c84        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+                0x00004c84                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00004cd0        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
-                0x00004cd0                __sfp_lock_release
+                0x00004c90        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+                0x00004c90                __sfp_lock_release
  .text.__libc_fini_array
-                0x00004cdc       0x34 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
-                0x00004cdc                __libc_fini_array
+                0x00004c9c       0x34 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
+                0x00004c9c                __libc_fini_array
  .text._malloc_trim_r
-                0x00004d10       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
-                0x00004d10                _malloc_trim_r
- .text._free_r  0x00004db0      0x1cc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
-                0x00004db0                _free_r
+                0x00004cd0       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
+                0x00004cd0                _malloc_trim_r
+ .text._free_r  0x00004d70      0x1cc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
+                0x00004d70                _free_r
  .text.__sfvwrite_r
-                0x00004f7c      0x2f0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fvwrite.o)
-                0x00004f7c                __sfvwrite_r
+                0x00004f3c      0x2f0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fvwrite.o)
+                0x00004f3c                __sfvwrite_r
  .text._fwalk_reent
-                0x0000526c       0x54 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fwalk.o)
-                0x0000526c                _fwalk_reent
+                0x0000522c       0x54 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fwalk.o)
+                0x0000522c                _fwalk_reent
  .text._localeconv_r
-                0x000052c0       0x1c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-localeconv.o)
-                0x000052c0                _localeconv_r
+                0x00005280       0x1c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-localeconv.o)
+                0x00005280                _localeconv_r
  .text.__retarget_lock_init_recursive
-                0x000052dc        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
-                0x000052dc                __retarget_lock_init_recursive
+                0x0000529c        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
+                0x0000529c                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x000052e0        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
-                0x000052e0                __retarget_lock_close_recursive
+                0x000052a0        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
+                0x000052a0                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x000052e4        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
-                0x000052e4                __retarget_lock_acquire_recursive
+                0x000052a4        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
+                0x000052a4                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000052e8        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
-                0x000052e8                __retarget_lock_release_recursive
+                0x000052a8        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
+                0x000052a8                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x000052ec       0x5c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
-                0x000052ec                __swhatbuf_r
+                0x000052ac       0x5c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
+                0x000052ac                __swhatbuf_r
  .text.__smakebuf_r
-                0x00005348       0x94 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
-                0x00005348                __smakebuf_r
+                0x00005308       0x94 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
+                0x00005308                __smakebuf_r
  .text._malloc_r
-                0x000053dc      0x560 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x000053dc                _malloc_r
- *fill*         0x0000593c        0x4 
- .text          0x00005940       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memchr.o)
-                0x00005940                memchr
- .text.memmove  0x000059e0       0xc8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memmove.o)
-                0x000059e0                memmove
+                0x0000539c      0x560 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x0000539c                _malloc_r
+ *fill*         0x000058fc        0x4 
+ .text          0x00005900       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memchr.o)
+                0x00005900                memchr
+ .text.memmove  0x000059a0       0xc8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-memmove.o)
+                0x000059a0                memmove
  .text.__malloc_lock
-                0x00005aa8        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
-                0x00005aa8                __malloc_lock
+                0x00005a68        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
+                0x00005a68                __malloc_lock
  .text.__malloc_unlock
-                0x00005ab4        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
-                0x00005ab4                __malloc_unlock
- .text._Balloc  0x00005ac0       0x4c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005ac0                _Balloc
- .text._Bfree   0x00005b0c       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005b0c                _Bfree
+                0x00005a74        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
+                0x00005a74                __malloc_unlock
+ .text._Balloc  0x00005a80       0x4c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005a80                _Balloc
+ .text._Bfree   0x00005acc       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005acc                _Bfree
  .text.__multadd
-                0x00005b20       0x80 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005b20                __multadd
+                0x00005ae0       0x80 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005ae0                __multadd
  .text.__hi0bits
-                0x00005ba0       0x40 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005ba0                __hi0bits
+                0x00005b60       0x40 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005b60                __hi0bits
  .text.__lo0bits
-                0x00005be0       0x60 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005be0                __lo0bits
- .text.__i2b    0x00005c40       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005c40                __i2b
+                0x00005ba0       0x60 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005ba0                __lo0bits
+ .text.__i2b    0x00005c00       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005c00                __i2b
  .text.__multiply
-                0x00005c54      0x124 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005c54                __multiply
+                0x00005c14      0x124 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005c14                __multiply
  .text.__pow5mult
-                0x00005d78       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005d78                __pow5mult
+                0x00005d38       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005d38                __pow5mult
  .text.__lshift
-                0x00005e18       0xa4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005e18                __lshift
- .text.__mcmp   0x00005ebc       0x38 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005ebc                __mcmp
- .text.__mdiff  0x00005ef4      0x108 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005ef4                __mdiff
- .text.__d2b    0x00005ffc       0xbc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00005ffc                __d2b
- .text._putc_r  0x000060b8       0x70 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-putc.o)
-                0x000060b8                _putc_r
+                0x00005dd8       0xa4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005dd8                __lshift
+ .text.__mcmp   0x00005e7c       0x38 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005e7c                __mcmp
+ .text.__mdiff  0x00005eb4      0x108 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005eb4                __mdiff
+ .text.__d2b    0x00005fbc       0xbc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00005fbc                __d2b
+ .text._putc_r  0x00006078       0x70 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-putc.o)
+                0x00006078                _putc_r
  .text._realloc_r
-                0x00006128      0x34c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-reallocr.o)
-                0x00006128                _realloc_r
- .text._sbrk_r  0x00006474       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-sbrkr.o)
-                0x00006474                _sbrk_r
- .text.__sread  0x00006498       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
-                0x00006498                __sread
+                0x000060e8      0x34c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-reallocr.o)
+                0x000060e8                _realloc_r
+ .text._sbrk_r  0x00006434       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-sbrkr.o)
+                0x00006434                _sbrk_r
+ .text.__sread  0x00006458       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
+                0x00006458                __sread
  .text.__swrite
-                0x000064bc       0x3c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
-                0x000064bc                __swrite
- .text.__sseek  0x000064f8       0x20 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
-                0x000064f8                __sseek
+                0x0000647c       0x3c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
+                0x0000647c                __swrite
+ .text.__sseek  0x000064b8       0x20 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
+                0x000064b8                __sseek
  .text.__sclose
-                0x00006518        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
-                0x00006518                __sclose
+                0x000064d8        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
+                0x000064d8                __sclose
  .text.__sprint_r.part.0
-                0x00006520       0x80 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
+                0x000064e0       0x80 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x000065a0       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
-                0x000065a0                __sprint_r
+                0x00006560       0x14 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
+                0x00006560                __sprint_r
  .text.__swbuf_r
-                0x000065b4       0xb0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wbuf.o)
-                0x000065b4                __swbuf_r
+                0x00006574       0xb0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wbuf.o)
+                0x00006574                __swbuf_r
  .text._write_r
-                0x00006664       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o)
-                0x00006664                _write_r
+                0x00006624       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o)
+                0x00006624                _write_r
  .text.__register_exitproc
-                0x00006690       0xc4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
-                0x00006690                __register_exitproc
+                0x00006650       0xc4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
+                0x00006650                __register_exitproc
  .text._calloc_r
-                0x00006754       0x60 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-callocr.o)
-                0x00006754                _calloc_r
+                0x00006714       0x60 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-callocr.o)
+                0x00006714                _calloc_r
  .text._close_r
-                0x000067b4       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o)
-                0x000067b4                _close_r
+                0x00006774       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o)
+                0x00006774                _close_r
  .text._fclose_r
-                0x000067d8       0xc4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fclose.o)
-                0x000067d8                _fclose_r
+                0x00006798       0xc4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fclose.o)
+                0x00006798                _fclose_r
  .text.__fputwc
-                0x0000689c       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
-                0x0000689c                __fputwc
+                0x0000685c       0xa0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
+                0x0000685c                __fputwc
  .text._fputwc_r
-                0x0000693c       0x68 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
-                0x0000693c                _fputwc_r
+                0x000068fc       0x68 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
+                0x000068fc                _fputwc_r
  .text._fstat_r
-                0x000069a4       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o)
-                0x000069a4                _fstat_r
+                0x00006964       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o)
+                0x00006964                _fstat_r
  .text._isatty_r
-                0x000069cc       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o)
-                0x000069cc                _isatty_r
+                0x0000698c       0x24 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o)
+                0x0000698c                _isatty_r
  .text.__locale_mb_cur_max
-                0x000069f0       0x1c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
-                0x000069f0                __locale_mb_cur_max
+                0x000069b0       0x1c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+                0x000069b0                __locale_mb_cur_max
  .text._lseek_r
-                0x00006a0c       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o)
-                0x00006a0c                _lseek_r
+                0x000069cc       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o)
+                0x000069cc                _lseek_r
  .text.__ascii_mbtowc
-                0x00006a38       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mbtowc_r.o)
-                0x00006a38                __ascii_mbtowc
- .text._read_r  0x00006a64       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o)
-                0x00006a64                _read_r
+                0x000069f8       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mbtowc_r.o)
+                0x000069f8                __ascii_mbtowc
+ .text._read_r  0x00006a24       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o)
+                0x00006a24                _read_r
  .text._wcrtomb_r
-                0x00006a90       0x54 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wcrtomb.o)
-                0x00006a90                _wcrtomb_r
+                0x00006a50       0x54 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wcrtomb.o)
+                0x00006a50                _wcrtomb_r
  .text.__ascii_wctomb
-                0x00006ae4       0x1c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wctomb_r.o)
-                0x00006ae4                __ascii_wctomb
- .text          0x00006b00      0x370 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
-                0x00006b00                __aeabi_drsub
-                0x00006b08                __aeabi_dsub
-                0x00006b08                __subdf3
-                0x00006b0c                __aeabi_dadd
-                0x00006b0c                __adddf3
-                0x00006d84                __floatunsidf
-                0x00006d84                __aeabi_ui2d
-                0x00006da4                __floatsidf
-                0x00006da4                __aeabi_i2d
-                0x00006dc8                __aeabi_f2d
-                0x00006dc8                __extendsfdf2
-                0x00006e04                __floatundidf
-                0x00006e04                __aeabi_ul2d
-                0x00006e14                __floatdidf
-                0x00006e14                __aeabi_l2d
- .text          0x00006e70      0x424 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
-                0x00006e70                __aeabi_dmul
-                0x00006e70                __muldf3
-                0x000070c4                __divdf3
-                0x000070c4                __aeabi_ddiv
- .text          0x00007294      0x110 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
-                0x00007294                __gtdf2
-                0x00007294                __gedf2
-                0x0000729c                __ltdf2
-                0x0000729c                __ledf2
-                0x000072a4                __nedf2
-                0x000072a4                __eqdf2
-                0x000072a4                __cmpdf2
-                0x00007320                __aeabi_cdrcmple
-                0x00007330                __aeabi_cdcmpeq
-                0x00007330                __aeabi_cdcmple
-                0x00007340                __aeabi_dcmpeq
-                0x00007354                __aeabi_dcmplt
-                0x00007368                __aeabi_dcmple
-                0x0000737c                __aeabi_dcmpge
-                0x00007390                __aeabi_dcmpgt
- .text          0x000073a4       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_unorddf2.o)
-                0x000073a4                __unorddf2
-                0x000073a4                __aeabi_dcmpun
- .text          0x000073d0       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixdfsi.o)
-                0x000073d0                __aeabi_d2iz
-                0x000073d0                __fixdfsi
- .text          0x00007420       0x30 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_uldivmod.o)
-                0x00007420                __aeabi_uldivmod
- .text          0x00007450      0x2dc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
-                0x00007450                __udivmoddi4
- .text          0x0000772c        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
-                0x0000772c                __aeabi_idiv0
-                0x0000772c                __aeabi_ldiv0
+                0x00006aa4       0x1c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-wctomb_r.o)
+                0x00006aa4                __ascii_wctomb
+ .text          0x00006ac0      0x370 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+                0x00006ac0                __aeabi_drsub
+                0x00006ac8                __aeabi_dsub
+                0x00006ac8                __subdf3
+                0x00006acc                __aeabi_dadd
+                0x00006acc                __adddf3
+                0x00006d44                __floatunsidf
+                0x00006d44                __aeabi_ui2d
+                0x00006d64                __floatsidf
+                0x00006d64                __aeabi_i2d
+                0x00006d88                __aeabi_f2d
+                0x00006d88                __extendsfdf2
+                0x00006dc4                __floatundidf
+                0x00006dc4                __aeabi_ul2d
+                0x00006dd4                __floatdidf
+                0x00006dd4                __aeabi_l2d
+ .text          0x00006e30      0x424 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+                0x00006e30                __aeabi_dmul
+                0x00006e30                __muldf3
+                0x00007084                __divdf3
+                0x00007084                __aeabi_ddiv
+ .text          0x00007254      0x110 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
+                0x00007254                __gtdf2
+                0x00007254                __gedf2
+                0x0000725c                __ltdf2
+                0x0000725c                __ledf2
+                0x00007264                __nedf2
+                0x00007264                __eqdf2
+                0x00007264                __cmpdf2
+                0x000072e0                __aeabi_cdrcmple
+                0x000072f0                __aeabi_cdcmpeq
+                0x000072f0                __aeabi_cdcmple
+                0x00007300                __aeabi_dcmpeq
+                0x00007314                __aeabi_dcmplt
+                0x00007328                __aeabi_dcmple
+                0x0000733c                __aeabi_dcmpge
+                0x00007350                __aeabi_dcmpgt
+ .text          0x00007364       0x2c c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_unorddf2.o)
+                0x00007364                __unorddf2
+                0x00007364                __aeabi_dcmpun
+ .text          0x00007390       0x50 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixdfsi.o)
+                0x00007390                __aeabi_d2iz
+                0x00007390                __fixdfsi
+ .text          0x000073e0       0x30 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_uldivmod.o)
+                0x000073e0                __aeabi_uldivmod
+ .text          0x00007410      0x2dc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+                0x00007410                __udivmoddi4
+ .text          0x000076ec        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+                0x000076ec                __aeabi_idiv0
+                0x000076ec                __aeabi_ldiv0
  *(.rodata*)
  .rodata.ContinuousTimer.str1.4
-                0x00007730       0x42 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x00007772        0x2 
+                0x000076f0       0x42 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x00007732        0x2 
  .rodata.I2C_BufferRead.str1.4
-                0x00007774       0x2b c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x0000779f        0x1 
+                0x00007734       0x2b c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x0000775f        0x1 
  .rodata.I2C_ByteRead.str1.4
-                0x000077a0       0xa2 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x00007842        0x2 
+                0x00007760       0xa2 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x00007802        0x2 
  .rodata.I2C_ByteWrite.str1.4
-                0x00007844       0x77 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x000078bb        0x1 
+                0x00007804       0x77 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x0000787b        0x1 
  .rodata.acc_convert.str1.4
-                0x000078bc       0x79 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x00007935        0x3 
+                0x0000787c       0x79 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x000078f5        0x3 
  .rodata.decode_gravity.str1.4
-                0x00007938       0x2d c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x00007965        0x3 
+                0x000078f8       0x2d c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x00007925        0x3 
  .rodata.main.str1.4
-                0x00007968       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+                0x00007928       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
  .rodata.measurement_loop.str1.4
-                0x000079c0       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+                0x00007980       0x58 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
                                   0x2 (size before relaxing)
  .rodata.print_binary_buffer.str1.4
-                0x000079c0       0x12 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x000079d2        0x2 
+                0x00007980       0x12 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x00007992        0x2 
  .rodata.print_buffer.str1.4
-                0x000079d4        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
- *fill*         0x000079da        0x2 
+                0x00007994        0x6 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/main.o
+ *fill*         0x0000799a        0x2 
  .rodata.i2c_init.str1.4
-                0x000079dc       0x34 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/i2c_bus.o
+                0x0000799c       0x34 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/i2c_bus.o
  .rodata.Board_Init.str1.4
-                0x00007a10       0x49 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
- *fill*         0x00007a59        0x3 
+                0x000079d0       0x49 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+ *fill*         0x00007a19        0x3 
  .rodata.console_uart_cfg
-                0x00007a5c       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00007a5c                console_uart_cfg
+                0x00007a1c       0x10 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00007a1c                console_uart_cfg
  .rodata.console_uart_sys_cfg
-                0x00007a6c        0x2 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00007a6c                console_uart_sys_cfg
- *fill*         0x00007a6e        0x2 
+                0x00007a2c        0x2 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00007a2c                console_uart_sys_cfg
+ *fill*         0x00007a2e        0x2 
  .rodata.led_pin
-                0x00007a70        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00007a70                led_pin
+                0x00007a30        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00007a30                led_pin
  .rodata.mxc_assert.str1.4
-                0x00007a7c       0x19 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
- *fill*         0x00007a95        0x3 
+                0x00007a3c       0x19 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+ *fill*         0x00007a55        0x3 
  .rodata.num_leds
-                0x00007a98        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00007a98                num_leds
+                0x00007a58        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00007a58                num_leds
  .rodata.num_pbs
-                0x00007a9c        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00007a9c                num_pbs
+                0x00007a5c        0x4 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00007a5c                num_pbs
  .rodata.pb_pin
-                0x00007aa0        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
-                0x00007aa0                pb_pin
+                0x00007a60        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/board.o
+                0x00007a60                pb_pin
  .rodata.LED_On.str1.4
-                0x00007aac       0x57 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
- *fill*         0x00007b03        0x1 
+                0x00007a6c       0x57 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/led.o
+ *fill*         0x00007ac3        0x1 
  .rodata.GPIO_Handler.str1.4
-                0x00007b04       0x2e c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
- *fill*         0x00007b32        0x2 
+                0x00007ac4       0x2e c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(gpio.o)
+ *fill*         0x00007af2        0x2 
  .rodata.I2C_Init.str1.4
-                0x00007b34       0x39 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
- *fill*         0x00007b6d        0x3 
+                0x00007af4       0x39 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+ *fill*         0x00007b2d        0x3 
  .rodata.I2C_Shutdown.str1.4
-                0x00007b70        0xd c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
- *fill*         0x00007b7d        0x3 
+                0x00007b30        0xd c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(i2c.o)
+ *fill*         0x00007b3d        0x3 
  .rodata.gpio_cfg_i2c0
-                0x00007b80        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007b80                gpio_cfg_i2c0
+                0x00007b40        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b40                gpio_cfg_i2c0
  .rodata.gpio_cfg_i2c1
-                0x00007b8c        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007b8c                gpio_cfg_i2c1
+                0x00007b4c        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b4c                gpio_cfg_i2c1
  .rodata.gpio_cfg_tmr0
-                0x00007b98        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007b98                gpio_cfg_tmr0
+                0x00007b58        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b58                gpio_cfg_tmr0
  .rodata.gpio_cfg_uart0a
-                0x00007ba4        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007ba4                gpio_cfg_uart0a
+                0x00007b64        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b64                gpio_cfg_uart0a
  .rodata.gpio_cfg_uart0rtscts
-                0x00007bb0        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007bb0                gpio_cfg_uart0rtscts
+                0x00007b70        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b70                gpio_cfg_uart0rtscts
  .rodata.gpio_cfg_uart1a
-                0x00007bbc        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007bbc                gpio_cfg_uart1a
+                0x00007b7c        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b7c                gpio_cfg_uart1a
  .rodata.gpio_cfg_uart1b
-                0x00007bc8        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007bc8                gpio_cfg_uart1b
+                0x00007b88        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b88                gpio_cfg_uart1b
  .rodata.gpio_cfg_uart1c
-                0x00007bd4        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007bd4                gpio_cfg_uart1c
+                0x00007b94        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007b94                gpio_cfg_uart1c
  .rodata.gpio_cfg_uart1rtscts
-                0x00007be0        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
-                0x00007be0                gpio_cfg_uart1rtscts
+                0x00007ba0        0xc c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(mxc_pins.o)
+                0x00007ba0                gpio_cfg_uart1rtscts
  .rodata.TMR_Init.str1.4
-                0x00007bec       0x14 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
+                0x00007bac       0x14 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/PeriphDriver/PeriphDriver.a(tmr.o)
  .rodata._global_impure_ptr
-                0x00007c00        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
-                0x00007c00                _global_impure_ptr
+                0x00007bc0        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+                0x00007bc0                _global_impure_ptr
  .rodata._puts_r.str1.4
-                0x00007c04        0x2 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
+                0x00007bc4        0x2 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-puts.o)
  .rodata._vfprintf_r.str1.4
-                0x00007c04       0x3f c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+                0x00007bc4       0x3f c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
                                  0x42 (size before relaxing)
- *fill*         0x00007c43        0x1 
+ *fill*         0x00007c03        0x1 
  .rodata.blanks.8366
-                0x00007c44       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+                0x00007c04       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
  .rodata.zeroes.8367
-                0x00007c54       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+                0x00007c14       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x00007c64       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
+                0x00007c24       0x10 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
                                  0x12 (size before relaxing)
- *fill*         0x00007c74        0x4 
+ *fill*         0x00007c34        0x4 
  .rodata.__mprec_bigtens
-                0x00007c78       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00007c78                __mprec_bigtens
+                0x00007c38       0x28 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00007c38                __mprec_bigtens
  .rodata.__mprec_tens
-                0x00007ca0       0xc8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
-                0x00007ca0                __mprec_tens
+                0x00007c60       0xc8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00007c60                __mprec_tens
  .rodata.p05.7183
-                0x00007d68        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+                0x00007d28        0xc c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
  .rodata._setlocale_r.str1.4
-                0x00007d74        0xa c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+                0x00007d34        0xa c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x00007d7e        0x2 
+ *fill*         0x00007d3e        0x2 
  .rodata.str1.4
-                0x00007d80        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+                0x00007d40        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
                                   0x2 (size before relaxing)
  .rodata._ctype_
-                0x00007d84      0x101 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-ctype_.o)
-                0x00007d84                _ctype_
+                0x00007d44      0x101 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-ctype_.o)
+                0x00007d44                _ctype_
  *(.init)
- *fill*         0x00007e85        0x3 
- .init          0x00007e88        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x00007e88                _init
- .init          0x00007e8c        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ *fill*         0x00007e45        0x3 
+ .init          0x00007e48        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x00007e48                _init
+ .init          0x00007e4c        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x00007e94        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x00007e94                _fini
- .fini          0x00007e98        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .fini          0x00007e54        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x00007e54                _fini
+ .fini          0x00007e58        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.eh_frame*)
- .eh_frame      0x00007ea0        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
- .eh_frame      0x00007ea0        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
-                0x00007ea4                _etext = .
+ .eh_frame      0x00007e60        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x00007e60        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o
+                0x00007e64                _etext = .
 
-.glue_7         0x00007ea4        0x0
- .glue_7        0x00007ea4        0x0 linker stubs
+.glue_7         0x00007e64        0x0
+ .glue_7        0x00007e64        0x0 linker stubs
 
-.glue_7t        0x00007ea4        0x0
- .glue_7t       0x00007ea4        0x0 linker stubs
+.glue_7t        0x00007e64        0x0
+ .glue_7t       0x00007e64        0x0 linker stubs
 
-.vfp11_veneer   0x00007ea4        0x0
- .vfp11_veneer  0x00007ea4        0x0 linker stubs
+.vfp11_veneer   0x00007e64        0x0
+ .vfp11_veneer  0x00007e64        0x0 linker stubs
 
-.v4_bx          0x00007ea4        0x0
- .v4_bx         0x00007ea4        0x0 linker stubs
+.v4_bx          0x00007e64        0x0
+ .v4_bx         0x00007e64        0x0 linker stubs
 
-.iplt           0x00007ea4        0x0
- .iplt          0x00007ea4        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x00007e64        0x0
+ .iplt          0x00007e64        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.ARM.exidx      0x00007ea4        0x8
-                0x00007ea4                __exidx_start = .
+.ARM.exidx      0x00007e64        0x8
+                0x00007e64                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x00007ea4        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
-                0x00007eac                __exidx_end = .
+ .ARM.exidx     0x00007e64        0x8 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+                0x00007e6c                __exidx_end = .
 
-.rel.dyn        0x00007eac        0x0
- .rel.iplt      0x00007eac        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x00007e6c        0x0
+ .rel.iplt      0x00007e6c        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.data           0x20000000      0x9c4 load address 0x00007eac
+.data           0x20000000      0x9c4 load address 0x00007e6c
                 0x20000000                _data = ALIGN (., 0x4)
  *(.data*)
  .data.ConsoleUART
@@ -3203,15 +3202,15 @@ LOAD c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/h
  .fini_array    0x200009c0        0x4 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x200009c4                PROVIDE (__fini_array_end, .)
                 0x200009c4                _edata = ALIGN (., 0x4)
-                0x00007eac                __load_data = LOADADDR (.data)
+                0x00007e6c                __load_data = LOADADDR (.data)
 
-.jcr            0x200009c4        0x0 load address 0x00008870
+.jcr            0x200009c4        0x0 load address 0x00008830
  .jcr           0x200009c4        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.igot.plt       0x200009c4        0x0 load address 0x00008870
+.igot.plt       0x200009c4        0x0 load address 0x00008830
  .igot.plt      0x200009c4        0x0 c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.bss            0x20000a00      0x4cc load address 0x00008870
+.bss            0x20000a00      0x4cc load address 0x00008830
                 0x20000a00                . = ALIGN (0x4)
                 0x20000a00                _bss = .
  *(.bss*)
@@ -3286,11 +3285,11 @@ LOAD c:/maxim/toolchain/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/h
                 0x20018000                __StackTop = (ORIGIN (SRAM) + LENGTH (SRAM))
                 0x20017000                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
 
-.stack_dummy    0x20000ed0     0x1000 load address 0x00008870
+.stack_dummy    0x20000ed0     0x1000 load address 0x00008830
  *(.stack*)
  .stack         0x20000ed0     0x1000 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/startup_max32660.o
 
-.heap           0x20000ed0      0xc00 load address 0x00008870
+.heap           0x20000ed0      0xc00 load address 0x00008830
                 0x20000ed0                . = ALIGN (0x4)
  *(.heap*)
  .heap          0x20000ed0      0xc00 c:/Users/spayr/Documents/eclipseworkspace/MAX32660/I2C_MXC_Accel/build/startup_max32660.o
