@@ -53,7 +53,7 @@
 #define GPIO_PIN_IN                 PIN_12
 
 #define GPIO_PORT_OUT               PORT_0
-#define GPIO_PIN_OUT                PIN_13
+#define GPIO_PIN_OUT                PIN_13 // PIN_13
 
 #define GPIO_PORT_INTERRUPT_IN      PORT_0
 #define GPIO_PIN_INTERRUPT_IN       PIN_3
