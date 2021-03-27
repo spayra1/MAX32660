@@ -6,6 +6,8 @@ Development for the Maxim MAX32660 microcontroller
 * Interfacing the Maxim MAX32660 with Microchip Technologies 24LC128 EEPROM memory
 * Interfacing the Maxim MAX32660 with NXP LM75A Temperature Sensor
 * Interfacing the Maxim MAX32660 with Memsic MXC4005xC Accelerometer Sensor
+* Establishing the Maxim MAX32660 as an LED controller for interactive GPIO control
+* Interconnecting Maxim MAX32660 units for low-power distributed computing
 
 ## Goals
 Development to enable the MAX32660 to serve as an in-fiber microcontroller. 
