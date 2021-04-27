@@ -17,5 +17,6 @@ See @ReflexArm repository for other work related to digital fibers
 ## Errata
 Couple notes on things that took a lot of time and frustration to figure out. I may reallocate these in the future:
 * Maxim UG7159 has instructions for in-application programming (over I2C/UART/SPI) using the MAX32630FTHR
+* If you would like to use the MAX32625 to reprogram a MAX32660 over SWD, the user guide misleadingly suggests that the MAX32625 SWD pinouts are also live on the DIP pins. This is false. Use an SWD ribbon cable and then an SWD breakout to expose pin connectors.
 * [This article](https://maximsupport.microsoftcrmportals.com/en-us/knowledgebase/article/KA-03553) contains instructions on how to hard-reset a MAX32660 chip if you've accidentally bricked it by incorrectly assigning pinouts, such as reallocating SWDIO/SWDCLK to other functionalities, and now you can't reprogram your board
 * If you're getting an inscrutable "SIGTRAP:Trace/breakpoint trap" error with "bkpt 0x0000" at the address 0x20005094, there is possibly an issue with your RST line. Was encountering this on multiple flex-PCBs; have been able to reproduce this by manually disconnecting the RST line on a functional flex-PCB.
