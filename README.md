@@ -11,7 +11,9 @@ Development using the Maxim MAX32660 microcontroller
 
 ## Goals
 Development to enable the MAX32660 to serve as an in-fiber microcontroller.
+
 Part of research work with the Fibers@MIT Lab, Professor Yoel Fink, MIT Research Laboratory of Electronics
+
 See @ReflexArm repository for other work related to digital fibers
 
 ## Errata
