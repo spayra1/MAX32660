@@ -1,7 +1,13 @@
 # MAX32660
-Development using the Maxim MAX32660 microcontroller
+Development using the Maxim MAX32660 to serve as an in-fiber microcontroller.
 
-## Content
+Part of research work with the Fibers@MIT Lab, Professor Yoel Fink, MIT Research Laboratory of Electronics.
+
+Some code originally sourced from Maxim tutorials. This repository is not officially affiliated with Maxim Integrated.
+
+See @ReflexArm repository for other work related to digital fibers
+
+## Goals / Content
 * I2C Controller/Client functionality for multi-device communications
 * Interfacing the Maxim MAX32660 with Microchip Technologies 24LC128 EEPROM memory
 * Interfacing the Maxim MAX32660 with NXP LM75A Temperature Sensor
@@ -9,15 +15,8 @@ Development using the Maxim MAX32660 microcontroller
 * Establishing the Maxim MAX32660 as an LED controller for interactive GPIO indicators
 * Interconnecting Maxim MAX32660 units for low-power distributed computing
 
-## Goals
-Development to enable the MAX32660 to serve as an in-fiber microcontroller.
-
-Part of research work with the Fibers@MIT Lab, Professor Yoel Fink, MIT Research Laboratory of Electronics
-
-See @ReflexArm repository for other work related to digital fibers
-
 ## Errata
-Couple notes on things that took a lot of time and frustration to figure out. I may reallocate these in the future:
+Couple notes on things that took a lot of time and frustration to figure out:
 * Maxim UG7159 has instructions for in-application programming (over I2C/UART/SPI) using the MAX32630FTHR
 * If you would like to use the MAX32625 to reprogram a MAX32660 over SWD, the user guide misleadingly suggests that the MAX32625 SWD pinouts are also live on the DIP pins. This is false. Use an SWD ribbon cable and then an SWD breakout to expose pin connectors.
 * [This article](https://maximsupport.microsoftcrmportals.com/en-us/knowledgebase/article/KA-03553) contains instructions on how to hard-reset a MAX32660 chip if you've accidentally bricked it by incorrectly assigning pinouts, such as reallocating SWDIO/SWDCLK to other functionalities, and now you can't reprogram your board
