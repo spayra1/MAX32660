@@ -34,6 +34,17 @@
  #
  ###############################################################################
 
+# added in for the GWE, 6/15/21
+#LINKERFILE=C:/Users/spayr/Documents/MIT/Sophomore\ Year/UROP/FPGA\ UROP/MAX32660\ work/non-secure-bl-release-3.4.2/max32660_bootloader_src/GCC/fw_for_bootloader_MAX32660.ld
+#LINKERFILE=C:/Users/spayr/Documents/MIT/Sophomore\ Year/UROP/FPGA\ UROP/MAX32660\ work/non-secure-bl-release-3.4.2/max32660_bootloader_src/GCC/bootloader_with_fw_MAX32660.ld
+#LINKERFILE=C:/Users/spayr/Documents/MIT/Sophomore\ Year/UROP/FPGA\ UROP/MAX32660\ work/non-secure-bl-release-3.4.2/max32660_bootloader_src/GCC/bootloader_MAX32660_debug.ld
+#LINKERFILE=C:/Maxim/Firmware/MAX32660/Libraries/CMSIS/Device/Maxim/MAX32660/Source/GCC/max32660.ld
+
+# updated correct, 6/23/21
+LINKERFILE=C:/Users/spayr/Documents/MIT/Sophomore\ Year/UROP/FPGA\ UROP/MAX32660\ work/non-secure-bl-release-3.4.2/max32660_bootloader_src/examples/Hello_World/max32660.ld
+# bin gen at bottom
+
+
 # This is the name of the build output file
 ifeq "$(PROJECT)" ""
 PROJECT=max32660
@@ -114,3 +125,6 @@ include $(CMSIS_ROOT)/Device/Maxim/$(TARGET_UC)/Source/$(COMPILER)/$(TARGET_LC).
 # The rule to clean out all the build products.
 distclean: clean
 	$(MAKE) -C ${PERIPH_DRIVER_DIR} clean
+
+all:
+	arm-none-eabi-objcopy $(BUILD_DIR)/$(PROJECT).elf -O binary $(BUILD_DIR)/$(PROJECT).bin
